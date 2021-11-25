@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+
+	<!--   
+
+		The <!DOCTYPE html> declaration defines that this document is an HTML5 document
+		The <html> element is the root element of an HTML page
+		The <head> element contains meta information about the HTML page
+		The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+		The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+		The <h1> element defines a large heading
+		The <p> element defines a paragraph
+
+	   -->
+
+<div class="container">
+
+	<h1>CURSO HTML 5</h1>
+	<hr>
+		
+	<h2>INTRODUCCION (ESTRUCTURA BASICA)</h2>
+	<p>	   
+			The < !DOCTYPE html > declaration defines that this document is an HTML5 document <br>
+			The < html > element is the root element of an HTML page <br>
+			The < head > element contains meta information about the HTML page <br>
+			The < title > element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)<br>
+			The < body > element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.<br>
+			The < h1 > element defines a large heading<br>
+			The < p > element defines a paragraph.<br>
+
+	</p>
+	<hr>
+	<h2>HTML ATRIBUTOS (Tags o elementos)</h2>
+
+	<p> IMAGENES</p> <br>
+	<p> The < img src="https://picsum.photos/200/300" alt="https://picsum.photos/" ></p>
+
+	<img src="https://picsum.photos/200/300" alt="https://picsum.photos/">
+
+	<p>  TITULOS </p><br>
+	< h1 >This is heading 1< /h1 ><br> 
+	< h2 >This is heading 2< /h2 ><br>
+	< h3 >This is heading 3< /h3 > ...<br>
+	< h6 >This is heading 6< /h6 >
+	 <p>
+
+	<h1>This is heading 1</h1>
+	<h2>This is heading 2</h2>
+	<h3>This is heading 3</h3>
+	<h4>This is heading 4</h4>
+	<h5>This is heading 5</h5>
+	<h6>This is heading 6</h6>
+
+	<p>PARRAFOS</p><br>
+
+	< p >	Defines a paragraph<br>
+	< hr >	Defines a thematic change in the content<br>
+	<hr style="width:500px; >
+	< br >	Inserts a single line break<br>
+	<br>
+	< pre > Defines pre-formatted text <br>
+	<pre>Parrafo pre</pre>
+
+	<hr>
+	<p>HTML ESTILOS</p>
+	<p> < div style="background-color:powderblue;></p>
+	<div style="background-color:powderblue;">
+		
+		<h1 style="color:Tomato;" >This is a heading</h1>
+		<p style="font-family:courier;">This is a paragraph.</p>
+
+	</div>
+
+	<br>
+
+	<p>
+		*Use the style attribute for styling HTML elements<br>
+		*Use background-color for background color<br>
+		*Use color for text colors<br>
+		*Use font-family for text fonts<br>
+		*Use font-size for text sizes<br>
+		*Use text-align for text alignment<br>
+
+	</p>
+	<hr>
+	<h3>ELEMENTOS DE FORMATOS DE TEXTO</h3>
+
+	<p>Elementos de formato de texto HTML<br>Tag Description<br></p>
+
+	<h3>
+		<b>	Defines bold text</b> < b><br>
+		<em>	Defines emphasized text </em>	< em><br>
+		<i>	Defines a part of text in an alternate voice or mood</i> < i><br>
+		<small>	Defines smaller text < small><br>
+		<strong>	Defines important text </strong>< strong><br>
+		<sub>	Defines subscripted text </sub>< sub><br>
+		<sup>	Defines superscripted text </sup>	< sup><br>
+		<ins>	Defines inserted text </ins>< ins>	<br>
+		<del>	Defines deleted text</del> < del><br>
+		<mark>	Defines marked/highlighted text</mark> < mark><br>
+	</h3>
+
+	<hr>
+
+	<h3>ELEMENTOS DE CITAS</h3>
+
+	<p>Tag	Description</p><br>
+
+		
+	<abbr>	Defines an abbreviation or acronym</abbr><br>
+	<address>	Defines contact information for the author/owner of a document</address><br>
+	<bdo>	Defines the text direction</bdo><br>
+	<blockquote>	Defines a section that is quoted from another source</blockquote><br>
+	<cite>	Defines the title of a work</cite><br>
+	<q>	Defines a short inline quotation</q><br>
+
+	<br><br>
+
+	<button class="enlace" role="link" onclick="myFunction()"> Siguiente Pagina > </button>
+
+</div>
+
+<script>
+function myFunction() {
+  let text = window.location.href;
+  console.log(text);
+  let result = text.replace("index.html", "page2.html");
+  console.log(result);
+  window.location=result;
+}
+</script>
+
+
+</html>

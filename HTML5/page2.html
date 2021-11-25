@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.linkbutton a:link,.linkbutton a:visited {
+		  background-color: #f44310;
+		  color: white;
+		  padding: 15px 25px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		}
+
+		.linkbutton a:hover, .linkbutton a:active {
+		  background-color: red;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+
+	<h2>CURSO HTML 5 ( Page 2 )</h2>
+	<hr>
+	
+	<h3>COMENTARIOS HTML</h3>
+
+	<!-- This is a comment -->
+	<p> < !-- This is a comment --> </p>
+ 
+	<p>This is a comentario interno</p>
+
+	<br>
+	<hr>
+
+	<h3>COLORES HTML</h3>
+
+	<h1 style="background-color:rgb(255, 99, 1);">..rgb(255, 99, 1)..</h1>
+	<h1 style="background-color:#ff6300;">..#ff6300..</h1>
+	<h1 style="background-color:hsl(9, 100%, 64%);">..hsl(9, 100%, 64%)..</h1>
+
+	<h1 style="background-color:rgba(255, 99, 71, 0.5);">..rgba(255, 99, 71, 0.5)..</h1>
+	<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">..hsla(9, 100%, 64%, 0.5)..</h1>
+	<hr>
+	<br>
+
+	<h3>ESTILOS HTML - CSS</h3>
+
+	<p>
+		< link rel="stylesheet" href="styles.css">
+	</p>
+	<br>
+	<p>
+		Tag	Description
+		< style> Defines style information for an HTML document
+		< link>  Defines a link between a document and an external resource
+	</p>
+	<br>
+<hr>
+	<h3>ENLACES HTML</h3>
+
+	<p>
+		Usa el < a>elemento para definir un enlace<br>
+		*Utilice el hrefatributo para definir la dirección del enlace.<br>
+		*Utilice el targetatributo para definir dónde abrir el documento vinculado<br>
+		*Usa el < img>elemento (adentro < a>) para usar una imagen como enlace<br>
+		*Utilice el mailto:esquema dentro del hrefatributo para crear un enlace que abra el programa de correo electrónico del usuario.
+	</p>
+
+	<p>	< a href="https://www.w3schools.com/"  title="Go to W3Schools HTML section" target="_blank">Visit W3Schools!</a> </p><br>
+	<a href="https://www.w3schools.com/"  title="Go to W3Schools HTML section" target="_blank">Visit W3Schools!</a>
+
+	<p>
+		El targetatributo puede tener uno de los siguientes valores:<br>
+
+		_self - Defecto. Abre el documento en la misma ventana / pestaña en la que se hizo clic<br>
+		_blank - Abre el documento en una nueva ventana o pestaña<br>
+		_parent - Abre el documento en el marco principal.<br>
+		_top - Abre el documento en todo el cuerpo de la ventana.<br>
+	</p>
+
+	<div class="linkbutton">
+			<h4>Link Button</h4>
+	<p>A link styled as a button:</p>
+	<a href="default.asp" target="_blank">This is a link</a>
+
+	</div>
+<hr>
+	<h3>IMAGENES HTML</h3>
+	<p>
+		Estos son los tipos de archivos de imagen más comunes, que son compatibles con todos los navegadores (Chrome, Edge, Firefox, Safari, Opera):<br>
+
+		*Abbreviation	File Format	File Extension<br>
+		*APNG	Animated Portable Network Graphics	.apng<br>
+		*GIF	Graphics Interchange Format	.gif<br>
+		*ICO	Microsoft Icon	.ico, .cur<br>
+		*JPEG	Joint Photographic Expert Group image	.jpg, .jpeg, .jfif, .pjpeg, .pjp<br>
+		*PNG	Portable Network Graphics	.png<br>
+		*SVG	Scalable Vector Graphics	.svg<br>
+	</p>
+<br>
+<p>< img src="https://picsum.photos/400/400" alt="HTML tutorial" style="width:400px;height:400px;"></p>
+
+
+	<img src="https://picsum.photos/400/400" alt="HTML tutorial" style="width:400px;height:400px;">
+
+<br>
+
+<p>
+	Etiquetas de imagen HTML<br>
+	Tag	Description <br>
+	*< img>	Defines an image<br>
+	*< map>	Defines an image map<br>
+	*< area>	Defines a clickable area inside an image map<br>
+	*< picture>	Defines a container for multiple image resources<br>
+</p>
+
+<h4> Map y Area </h4>
+
+<p>
+< img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+< map name="workmap">
+  < area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  < area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  < area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+< /map>
+</p>
+
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+<img src="https://picsum.photos/400/400" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+
+<p>
+< img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+< picture>
+  < source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+  < source media="(min-width:465px)" srcset="img_white_flower.jpg">
+  < img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</ picture>
+</p>
+
+<p>Resize the browser window to load different images.</p>
+
+<picture>
+  <source media="(min-width:600px)" srcset="https://picsum.photos/400/600">
+  <source media="(min-width:400px)" srcset="https://picsum.photos/400/400">
+  <img src="https://picsum.photos/500/500" alt="Flowers" style="width:auto;">
+</picture>
+
+
+	<br><br>
+
+	<button class="enlace" role="link" onclick="myFunction()"> Siguiente Pagina > </button>
+
+</div>
+
+<script>
+function myFunction() {
+  let text = window.location.href;
+  let result = text.replace("page2.html", "page3.html");
+  console.log(result);
+  window.location=result;
+}
+</script>
+	
+</body>
+</html>
