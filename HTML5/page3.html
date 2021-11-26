@@ -4,6 +4,36 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+
+
+	<style>
+	table{
+	  border:1px solid black;
+	}
+
+th, td {
+	 
+	  border-radius: 10px;
+	 border-style: ridge;
+	}
+
+
+
+
+.tablon, .tablon th, .tablon td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.tablon tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+.tablon th:nth-child(even),.tablon td:nth-child(even)  {
+  background-color: #D6EEEE;
+}
+
+	</style>
 </head>
 <body>
 
@@ -11,9 +41,233 @@
 
 	<h2>CURSO HTML 5 ( Page 3 )</h2>
 	<hr>
-	
+	<h3>HTML FAVICON</h3>
 
-	<br><br>
+	<p>  
+		< !DOCTYPE html>
+		< html>
+		< head>
+		  < title>My Page Title</title>
+		  < link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+		< /head>
+	</p>
+
+	<hr>
+
+	<h3>HTML Tables</h3>
+<p>
+	Etiquetas de tabla HTML <br>
+	Tag	Description<br>
+	< table>	Defines a table<br>
+	< th>	Defines a header cell in a table<br>
+	< tr>	Defines a row in a table<br>
+	< td>	Defines a cell in a table<br>
+	< caption>	Defines a table caption<br>
+	< colgroup>	Specifies a group of one or more columns in a table for formatting<br>
+	< col>	Specifies column properties for each column within a <colgroup> element<br>
+	< thead>	Groups the header content in a table<br>
+	< tbody>	Groups the body content in a table<br>
+	< tfoot>	Groups the footer content in a table<br>
+		</p>
+<table style="width:100%">
+  <tr>
+    <th>Person 1</th>
+    <th>Person 2</th>
+    <th>Person 3</th>
+  </tr>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+	<br>
+
+	<p>
+		<b>ESTILOS CSS</b>
+		<br><br>
+
+		Con la border-stylepropiedad, puede establecer la apariencia del borde.<br>
+		<br>
+ 		
+		table{	<br>
+		  border:1px solid black;<br>
+		}<br>
+
+		th, td {<br>
+		 border-radius: 10px;<br>
+		 border-style: ridge;<br>
+		}<br>
+
+ 		<br><br>
+
+		Se permiten los siguientes valores:<br>
+
+		*dotted     <br>
+		*dashed     <br>
+		*solid     
+		*double     <br>
+		*groove     <br>
+		*ridge     <br>
+		*inset  <br>
+		*outset     <br>
+		*none     <br>
+		*hidden    <br>
+
+		<br>
+	</p>
+
+	<h4>Encabezado para varias columnas <br>
+Puede tener un encabezado que abarque dos o más columnas.
+</h4>
+
+	<table style=" padding-top: 10px;padding-bottom: 10px; padding-left: 30px;padding-right: 30px;border-spacing: 30px;">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td rowspan="2">50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+	<br>
+	<p>Colspan y Rowspan de tabla HTML (th y td)</p>
+	<br>
+
+	<p>
+		< table style=" padding-top: 10px;padding-bottom: 10px; padding-left: 30px;padding-right: 30px;border-spacing: 30px;">
+	</p>
+
+
+
+
+
+
+<h2>Striped Table</h2>
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+
+<table class="tablon" style="width:100%">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+<br>
+	<p>
+		< style><br>
+			table, th, td {<br>
+			  border: 1px solid black;<br>
+			  border-collapse: collapse;<br>
+			}<br>
+<br>
+			tr:nth-child(even) {<br>
+			  background-color: #D6EEEE;<br>
+			}<br>
+<br>
+			th:nth-child(even),td:nth-child(even)  {<br>
+			  background-color: #D6EEEE;<br>
+			}<br>
+		< /style><br>
+	</p>	
+
+	<br>
+	
+	<h3>Colgroup de tabla HTML</h3>
+	<p>Si desea aplicar estilo a las dos primeras columnas de una tabla, utilice los elementos < colgroup> y < col>.  </p>
+
+
+<img src="img/tablita.png" alt="tablita">
+
+  <p>
+  	El < colgroup>elemento debe usarse como contenedor para las especificaciones de la columna. <br>
+
+	Cada grupo se especifica con un < col>elemento.<br>
+
+	El spanatributo especifica cuántas columnas obtiene el estilo.<br>
+
+	El styleatributo especifica el estilo para dar a las columnas.<br>
+
+  </p>
+
+
+
+<br>
+<br>
+ <p>
+ 	< table><br>
+	  < colgroup><br>
+	    < col span="2" style="background-color: #D6EEEE"><br>
+	  </ colgroup><br>
+	  < tr><br>
+		< th>MON</ th><br>
+	    < th>TUE</ th><br>
+	    < th>WED</ th><br>
+	    < th>THU</ th><br>
+	    ....
+ </p>
+
+
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+...
+
 
 	<button class="enlace" role="link" onclick="myFunction()"> Siguiente Pagina > </button>
 
