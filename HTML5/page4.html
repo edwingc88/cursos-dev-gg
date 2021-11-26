@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+<body>
+
+	<div class="container">
+
+		<h2>CURSO HTML 5 ( Page 4 )</h2>
+		<hr>
+		<h3>LISTAS HTML</h3>
+
+		<p>	
+		Tag	Description
+			< ul>	Defines an unordered list
+			< ol>	Defines an ordered list
+			< li>	Defines a list item
+		</p>
+
+		<ul>
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ul>
+
+		<ol>
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ol>  
+
+		<br>
+
+		<h4>Listas de descripción HTML <br>
+HTML también admite listas de descripción.</h4>
+
+<p>
+	La < dl>etiqueta define la lista de descripción, la < dt>etiqueta define el término (nombre) y la < dd> etiqueta describe cada término:
+</p>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+<br>
+
+<h4>Lista HTML desordenada: elija Marcador de elemento de lista</h4>
+<p>	
+	La list-style-typepropiedad CSS se utiliza para definir el estilo del marcador de elementos de la lista. Puede tener uno de los siguientes <br>valores:<br>
+<br>
+	Value	Description<br>
+	disc	Sets the list item marker to a bullet (default)<br>
+	circle	Sets the list item marker to a circle<br>
+	square	Sets the list item marker to a square<br>
+	none	The list items will not be marked<br>
+	<br>
+
+	< ul style="list-style-type:circle;">
+</p>
+
+<ul style="list-style-type: circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+<br>
+
+		
+	</div>
+
+<script>
+function myFunction() {
+  let text = window.location.href;
+  console.log(text);
+  let result = text.replace("index.html", "page4.html");
+  console.log(result);
+  window.location=result;
+}
+</script>
+	
+</body>
+</html>

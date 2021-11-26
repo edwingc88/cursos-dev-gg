@@ -249,26 +249,18 @@ Puede tener un encabezado que abarque dos o más columnas.
 <br>
  <p>
  	< table><br>
-	  < colgroup><br>
-	    < col span="2" style="background-color: #D6EEEE"><br>
-	  </ colgroup><br>
-	  < tr><br>
-		< th>MON</ th><br>
-	    < th>TUE</ th><br>
-	    < th>WED</ th><br>
-	    < th>THU</ th><br>
-	    ....
+	  &nbsp;	&nbsp;< colgroup><br>
+	  &nbsp;	&nbsp;< col span="2" style="background-color: #D6EEEE"><br>
+	 &nbsp;	&nbsp;</ colgroup><br>
+	  &nbsp;	&nbsp;< tr><br>
+	&nbsp;	&nbsp;< th>MON</ th><br>
+	   &nbsp; &nbsp;< th>TUE</ th><br>
+	   &nbsp; &nbsp;< th>WED</ th><br>
+	  &nbsp; &nbsp; < th>THU</ th><br>
+	  &nbsp; &nbsp; ....
  </p>
 
-
-  <tr>
-    <th>MON</th>
-    <th>TUE</th>
-    <th>WED</th>
-    <th>THU</th>
-...
-
-
+<br>
 	<button class="enlace" role="link" onclick="myFunction()"> Siguiente Pagina > </button>
 
 </div>
@@ -277,7 +269,7 @@ Puede tener un encabezado que abarque dos o más columnas.
 function myFunction() {
   let text = window.location.href;
   console.log(text);
-  let result = text.replace("index.html", "page3.html");
+  let result = text.replace("page3.html", "page4.html");
   console.log(result);
   window.location=result;
 }
