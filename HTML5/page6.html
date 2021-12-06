@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+	details > summary {
+	  padding: 4px;
+	  width: 200px;
+	  background-color: #eeeeee;
+	  border: none;
+	  box-shadow: 1px 1px 2px #bbbbbb;
+	}
+
+	details > p {
+	  background-color: #eeeeee;
+	  padding: 4px;
+	  margin: 0;
+	  box-shadow: 1px 1px 2px #bbbbbb;
+	}
+</style>
+
+<body>
+
+<div class="container">
+
+	<h2>CURSO HTML 5 ( Page 6 )</h2>
+
+	<hr>
+
+	<h2>Elementos semánticos en HTML</h2>
+	<p>
+		A continuación se muestra una lista de algunos de los elementos semánticos en HTML. <br>
+
+		Tag	Description <br>
+		< article>	Defines independent, self-contained content <br>
+		< aside>	Defines content aside from the page content <br>
+		< details>	Defines additional details that the user can view or hide  <br>
+		< figcaption>	Defines a caption for a < figure> element <br>
+		 figure>	Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc. <br>
+		< footer>	Defines a footer for a document or section <br>
+		< header>	Specifies a header for a document or section <br>
+		< main>	Specifies the main content of a document <br>
+		< mark>	Defines marked/highlighted text <br>
+		< nav>	Defines navigation links <br>
+		< section>	Defines a section in a document <br>
+		< summary>	Defines a visible heading for a < details> element <br>
+		< time>	Defines a date/time <br>
+	</p>
+
+
+<h4>Ejemplo:</h4> 
+	<p class="codigo">
+		< figure> <br>
+		  < img src="pic_trulli.jpg" alt="Trulli" style="width:40%"><br>
+		  < figcaption>Fig.1 - Trulli, Puglia, Italy.< /figcaption><br>
+		< /figure><br>
+	</p>
+
+	<figure>
+	  <img src="https://picsum.photos/500/500" alt="Trulli" style="width:40%">
+	  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+	</figure>
+
+	<br>
+
+
+<h4>The mark element</h4>
+
+
+<p class="codigo"> < p>Do not forget to buy < mark> milk </ mark> today.< /p> </p>
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+
+<h4>HTML < details > y < summary> Tag</h4>
+
+<p class="codigo">
+	< details> <br>
+	  < summary >Epcot Center < /summary><br>
+	  < p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.< /p><br>
+	</ details><br>
+</p>
+
+
+<p>The details and summary elements + CSS</p>
+
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
+
+<br>
+
+<h4>Etiqueta HTML < TIME ></h4>
+
+<p class="codigo">
+	< p>Open from < time>10:00< /time> to < time>21:00< /time> every weekday.< /p> <br>	
+
+	< p>I have a date on < time datetime="2008-02-14 20:00">Valentines day< /time>.< /p><br>	
+
+</p>
+
+	<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+
+	<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+	<p><b>Note:</b> The time element does not render as anything special in any of the major browsers.</p>
+ <hr>
+
+</div>
+
+<script>
+
+
+</script>
+	
+</body>
+</html>

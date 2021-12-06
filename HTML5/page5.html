@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Document</title>
+<body>
+
+<div class="container">
+
+	<h2>CURSO HTML 5 ( Page 5 )</h2>
+
+	<br> <br>	
+
+	<h3>HTML IFRAMES</h3>
+
+	<p>Un iframe HTML se utiliza para mostrar una página web dentro de una página web.</p>
+
+	<p>La < iframe>etiqueta HTML especifica un marco en línea.</p>
+
+	<p class="codigo"> Ejemplo: < iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example">< /iframe></p>
+
+	<iframe src="https://www.youtube.com/" height="300" width="300" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+	<h4>Iframe - Target for a Link</h4>
+
+	<iframe src="demo_iframe.htm" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+	<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+	<p>
+	Cuando el atributo de destino de un enlace coincide con el nombre de un iframe, el enlace se abrirá en el iframe.</p>
+
+	<hr>
+	<h2>HTML JavaScript</h2>
+
+	<p>
+		Descripción de la etiqueta <br>
+		< script> Define un script del lado del cliente<br>
+		< noscript> Define un contenido alternativo para los usuarios que no admiten scripts del lado del cliente
+	</p>
+
+	<h4>Ejemplo</h4>
+
+	<p class="codigo">	
+		< p id="demo">< /p> <br>
+		< script><br>
+		document.getElementById("demo").innerHTML = "Hello JavaScript!";<br>
+		< /script> <br>
+	</p>
+
+	<div>
+		<h5>Use JavaScript to Change Text</h5>
+		<p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+
+		<p id="demo"></p>
+
+	</div>
+
+	<h5>JavaScript puede cambiar el contenido: </h5>
+<p class="codigo">	document.getElementById("demo1").innerHTML = "Hello JavaScript!"; </p>
+
+	
+	
+	<p id="demo1"></p>
+
+	<h5>JavaScript puede cambiar el contenido: </h5>
+<p class="codigo">	
+	document.getElementById("demo").style.color = "red";</p>
+	
+
+<h5>	JavaScript puede cambiar atributos:</h5>
+
+<p class="codigo">	 document.getElementById("myImage").src = "perro.gif";</p> 
+
+<p>EJEMPLO: Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+
+<img id="myImage" src="img/perro-stop.gif" >
+
+<p>
+<button type="button" onclick="accion(0)">Sentarse</button>
+<button type="button" onclick="accion(1)">Correr</button>
+</p>
+
+ <hr>
+<h2>HTML File Paths o RUTAS DE ARCHIVOS</h2>
+Sendero	Descripción<br>
+<p class="codigo"> 
+	< img src = "imagen.jpg">	El archivo "picture.jpg" se encuentra en la misma carpeta que la página actual. <br>
+	< img src = "images / picture.jpg">	El archivo "picture.jpg" se encuentra en la carpeta de imágenes en la carpeta actual.<br>
+	< img src = "/ images / picture.jpg">	El archivo "picture.jpg" se encuentra en la carpeta de imágenes en la raíz de la web actual.<br>
+	< img src = "../ picture.jpg">	El archivo "picture.jpg" se encuentra en la carpeta un nivel más arriba de la carpeta actual<br>
+</p>
+ <hr>
+<h2>HTML: el elemento principal (The Head )</h2>
+
+<p>
+	El < head>elemento es un contenedor de metadatos (datos sobre datos).<br>
+	El < head>elemento se coloca entre la < html>etiqueta y la < body>etiqueta.<br>
+	El < title>elemento es obligatorio y define el título del documento.<br>
+	El < style>elemento se utiliza para definir información de estilo para un solo documento.<br>
+	La < link> etiqueta se usa con mayor frecuencia para vincular a hojas de estilo externas<br>
+	El < meta>elemento se utiliza normalmente para especificar el conjunto de caracteres, la descripción de la página, las palabras clave, el autor del documento y la configuración de la ventana gráfica.<br>
+	El < script>elemento se utiliza para definir JavaScripts del lado del cliente.<br>
+	El < base>elemento especifica la URL base y / o el destino para todas las URL relativas en una página.<br>
+</p>
+
+ <h5>  EJEMPLO</h5> 
+ <p class="codigo">
+  < meta charset="UTF-8"><br>
+  < meta name="description" content="Free Web tutorials"><br>
+  < meta name="keywords" content="HTML, CSS, JavaScript"><br>
+  < meta name="author" content="John Doe"><br>
+  < meta name="viewport" content="width=device-width, initial-scale=1.0">
+</p>
+
+
+
+<h2>ELEMENTOS de diseño HTML</h2>
+
+<p>HTML tiene varios elementos semánticos que definen las diferentes partes de una página web:</p>
+
+	<ul>
+		<li>< header> - Define un encabezado para un documento o una sección.</i>
+			<li>< nav> - Define un conjunto de enlaces de navegación.</i>
+			<li>< section> - Define una sección en un documento</i>
+			<li>< article> - Define un contenido autónomo e independiente</i>
+			<li>< aside> - Define contenido aparte del contenido (como una barra lateral)</i>
+			<li>< footer> - Define un pie de página para un documento o una sección.</i>
+			<li>< details> - Define detalles adicionales que el usuario puede abrir y cerrar a pedido.</i>
+			<li>< summary>- Define un encabezado para el < details>elemento.</i>
+	</ul>
+
+  <hr>
+
+  <h2>Diseño Web Responsive HTML</h2>
+
+<p>Para crear un sitio web receptivo, agregue la siguiente <meta> etiqueta a todas sus páginas web:</p>
+
+<p class="codigo">< meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+
+ <button class="enlace" role="link" onclick="myFunction()"> Siguiente Pagina > </button>	
+
+</div>
+
+<script>
+
+		document.getElementById("demo").innerHTML = "Hello JavaScript!";
+		document.getElementById("demo1").innerHTML = "Hello JavaScript!";
+ 		document.getElementById("demo1").style.color = "red";
+
+
+ 		//// codifo de perro
+
+	 	function accion(sw) {
+				  var pic;
+				  if (sw == 0) {
+				    pic = "img/perro-stop.gif"
+				  } else {
+				    pic = "img/perro-run.gif"
+				  }
+				  document.getElementById('myImage').src = pic;
+		}
+
+
+		function myFunction() {
+		  let text= window.location.href.replace(window.location.search,'');
+		  console.log(text);
+		  let result = text.replace("page5.html", "page6.html");
+		  console.log(result);
+		  window.location=result;
+		}
+
+</script>
+	
+</body>
+</html>

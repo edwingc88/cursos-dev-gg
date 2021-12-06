@@ -3,58 +3,53 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-
-
+	<title>CURSO HTML 5</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<style>
-	table{
-	  border:1px solid black;
-	}
 
-th, td {
-	 
-	  border-radius: 10px;
-	 border-style: ridge;
-	}
+		table{
+		  border:1px solid black;
+		}
 
+		th, td {
+		  border-radius: 10px;
+		  border-style: ridge;
+		}
 
+		.tablon, .tablon th, .tablon td {
+		  border: 1px solid black;
+		  border-collapse: collapse;
+		}
 
+		.tablon tr:nth-child(even) {
+		  background-color: #D6EEEE;
+		}
 
-.tablon, .tablon th, .tablon td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-.tablon tr:nth-child(even) {
-  background-color: #D6EEEE;
-}
-
-.tablon th:nth-child(even),.tablon td:nth-child(even)  {
-  background-color: #D6EEEE;
-}
+		.tablon th:nth-child(even),.tablon td:nth-child(even)  {
+		  background-color: #D6EEEE;
+		}
 
 	</style>
 </head>
 <body>
-
 	<div class="container">
-
 	<h2>CURSO HTML 5 ( Page 3 )</h2>
 	<hr>
-	<h3>HTML FAVICON</h3>
+	<h2>HTML FAVICON</h2>
 
-	<p>  
-		< !DOCTYPE html>
-		< html>
-		< head>
-		  < title>My Page Title</title>
-		  < link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-		< /head>
+	<p class="codigo">  
+		< !DOCTYPE html> <br>
+		< html><br>
+		< head><br>
+		  < title>My Page Title< /title><br>
+		  < link rel="icon" type="image/x-icon" href="/images/favicon.ico"><br>
+		< /head><br>
 	</p>
 
 	<hr>
 
-	<h3>HTML Tables</h3>
+	<h2>HTML Tables</h2>
 <p>
 	Etiquetas de tabla HTML <br>
 	Tag	Description<br>
@@ -87,14 +82,14 @@ th, td {
   </tr>
 </table>
 	<br>
+<hr>
 
-	<p>
-		<b>ESTILOS CSS</b>
+		<b>ESTILOS CSS PARA TABLA: </b>
 		<br><br>
 
 		Con la border-stylepropiedad, puede establecer la apariencia del borde.<br>
 		<br>
- 		
+ 			<p class="codigo">
 		table{	<br>
 		  border:1px solid black;<br>
 		}<br>
@@ -103,8 +98,8 @@ th, td {
 		 border-radius: 10px;<br>
 		 border-style: ridge;<br>
 		}<br>
-
- 		<br><br>
+	</p>
+ 		<br>
 
 		Se permiten los siguientes valores:<br>
 
@@ -120,13 +115,12 @@ th, td {
 		*hidden    <br>
 
 		<br>
-	</p>
 
-	<h4>Encabezado para varias columnas <br>
+
+	<h4>Encabezado para varias columnas</h4> <h5>
 Puede tener un encabezado que abarque dos o más columnas.
-</h4>
-
-	<table style=" padding-top: 10px;padding-bottom: 10px; padding-left: 30px;padding-right: 30px;border-spacing: 30px;">
+</h5>
+	<table style=" padding-top: 10px;padding-bottom: 10px; padding-left: 30px;padding-right: 30px;border-spacing: 20px;">
   <tr>
     <th colspan="2">Name</th>
     <th>Age</th>
@@ -134,7 +128,7 @@ Puede tener un encabezado que abarque dos o más columnas.
   <tr>
     <td>Jill</td>
     <td>Smith</td>
-    <td rowspan="2">50</td>
+    <td>50</td>
   </tr>
   <tr>
     <td>Eve</td>
@@ -147,7 +141,7 @@ Puede tener un encabezado que abarque dos o más columnas.
 	<p>Colspan y Rowspan de tabla HTML (th y td)</p>
 	<br>
 
-	<p>
+	<p class="codigo">
 		< table style=" padding-top: 10px;padding-bottom: 10px; padding-left: 30px;padding-right: 30px;border-spacing: 30px;">
 	</p>
 
@@ -207,7 +201,7 @@ Puede tener un encabezado que abarque dos o más columnas.
   </tr>
 </table>
 <br>
-	<p>
+	<p class="codigo">
 		< style><br>
 			table, th, td {<br>
 			  border: 1px solid black;<br>
@@ -247,7 +241,7 @@ Puede tener un encabezado que abarque dos o más columnas.
 
 <br>
 <br>
- <p>
+ <p class="codigo">
  	< table><br>
 	  &nbsp;	&nbsp;< colgroup><br>
 	  &nbsp;	&nbsp;< col span="2" style="background-color: #D6EEEE"><br>

@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 <body>
 
 	<div class="container">
@@ -33,8 +35,8 @@
 
 		<br>
 
-		<h4>Listas de descripción HTML <br>
-HTML también admite listas de descripción.</h4>
+		<h5>Listas de descripción HTML <br>
+HTML también admite listas de descripción.</h5>
 
 <p>
 	La < dl>etiqueta define la lista de descripción, la < dt>etiqueta define el término (nombre) y la < dd> etiqueta describe cada término:
@@ -48,19 +50,20 @@ HTML también admite listas de descripción.</h4>
 </dl>
 <br>
 
-<h4>Lista HTML desordenada: elija Marcador de elemento de lista</h4>
-<p>	
-	La list-style-typepropiedad CSS se utiliza para definir el estilo del marcador de elementos de la lista. Puede tener uno de los siguientes <br>valores:<br>
-<br>
-	Value	Description<br>
-	disc	Sets the list item marker to a bullet (default)<br>
-	circle	Sets the list item marker to a circle<br>
-	square	Sets the list item marker to a square<br>
-	none	The list items will not be marked<br>
-	<br>
+<h4>Lista HTML desordenada:</h4>
 
-	< ul style="list-style-type:circle;">
-</p>
+	La list-style-typepropiedad CSS se utiliza para definir el estilo del marcador de elementos de la lista.
+	<h5>Value Description:</h5>
+<p>	
+	disc	&nbsp;&nbsp;Sets the list item marker to a bullet (default)<br>
+	circle	&nbsp;&nbsp;Sets the list item marker to a circle<br>
+	square	&nbsp;&nbsp;Sets the list item marker to a square<br>
+	none	&nbsp;&nbsp;The list items will not be marked<br>
+	<br></p>
+
+	<p class="codigo">< ul style="list-style-type:circle;"></p>
+	
+
 
 <ul style="list-style-type: circle;">
   <li>Coffee</li>
@@ -71,14 +74,166 @@ HTML también admite listas de descripción.</h4>
 
 <br>
 
-		
-	</div>
+
+	<h4>Lista HTML ordenada: el atributo de tipo</h4>
+	<p>El typeatributo de la < ol>etiqueta define el tipo de marcador de elemento de lista:<br>
+<br>
+	Type	Description<br>
+	type="1"	The list items will be numbered with numbers (default)<br>
+	type="A"	The list items will be numbered with uppercase letters<br>
+	type="a"	The list items will be numbered with lowercase letters<br>
+	type="I"	The list items will be numbered with uppercase roman numbers<br>
+	type="i"	The list items will be numbered with lowercase roman numbers<br>
+</p>
+		<br>
+
+		<ol type="I">
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ol>  
+
+	<br>
+<hr>
+	<h2>BLOQUE HTML y elementos en LINEA</h2>
+
+	<p>Hay dos valores de visualización: bloque y en línea <br>
+	<br>Un elemento a nivel de bloque siempre comienza en una nueva línea y ocupa todo el ancho disponible.
+<br>Un elemento en línea no comienza en una nueva línea y solo ocupa el ancho necesario
+<br>El < div>elemento es un nivel de bloque y a menudo se usa como contenedor para otros elementos HTML.
+<br>El < span>elemento es un contenedor en línea que se utiliza para marcar una parte de un texto o una parte de un documento.</p>
+
+<br>
+<p>Estos son los elementos a nivel de bloque en HTML:</p>
+
+<img src="img/block.png"> 
+<p>Estos son los elementos a nivel de Linea en HTML:</p>
+
+<img src="img/LINE.png"> 
+<hr>
+<h2>HTML CLASS Attribute</h2>
+
+<p>El classatributo HTML se utiliza para especificar una clase para un elemento HTML.</p>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+</style>
+</head>
+<body>
+
+
+<p>Even if the two elements do not have the same tag name, they can both point to the same class, and get the same CSS styling:</p>
+
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France.</p>
+
+<p class="codigo">
+	< h2 class="city">Paris< /h2><br>
+	< p class="city">Paris is the capital of France.< /p>
+</p>
+
+<hr>
+
+<h2>HTML ID Attribute</h2>
+
+<p>El id atributo HTML se utiliza para especificar una identificación única para un elemento HTML.</p>
+
+
+
+<p>El idatributo se utiliza para especificar una identificación única para un elemento HTML.
+El valor del id atributo debe ser único dentro del documento HTML</p>
+<p class="codigo">< h1 id="myHeader">My Header< /h1>
+</p>
+
+<p>Marcadores HTML con ID y enlaces </p>
+<h5>Los marcadores HTML se utilizan para permitir a los lectores saltar a partes específicas de una página web.</h5>
+
+
+<p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C10">Jump to Chapter 10</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C10">Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 16</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 17</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 18</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 19</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 20</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 21</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 22</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 23</h2>
+<p>This chapter explains ba bla bla</p>
+
+<br> <br>	
+	
+<button class="enlace" role="link" onclick="myFunction()"> Siguiente Pagina > </button>	
+
+</div>
 
 <script>
 function myFunction() {
-  let text = window.location.href;
-  console.log(text);
-  let result = text.replace("index.html", "page4.html");
+   let text= window.location.href.replace(window.location.search,'');
+  let result = text.replace("page4.html", "page5.html");
   console.log(result);
   window.location=result;
 }
